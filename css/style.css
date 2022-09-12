@@ -51,42 +51,64 @@ main{
     transform: translate(-50%, -50%);
 }
 
-.caixa{
-    position: relative;
-    right: 490px;
-    
-}
-
 .imagem-principal{
     background-image: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
     right: 80px;
+    cursor: auto;
 }
-.imagens{
-    background-image: url(../images/bg-pattern-desktop.svg);
+
+h2{
+    color: var(--Very-dark-grayish-blue);
+    font-weight: 400;
+}
+
+h2:focus{
+    font-weight: 700;
 }
 h2:hover{
-    color: red;
+    color: var(--Soft-red);
+}
 
+.imagens{
+    background-image: url(../images/bg-pattern-desktop.svg);
 }
 
 .container2{
     display: block;
+    margin: auto;
 }
 
 div{
     display: flex;
     align-items: center;
     cursor: pointer;
+    
 }
 
+.pergunta-resposta{
+    border-bottom: .5px solid var(--Dark-grayish-blue);
+    display: block;
+    width: 400px;
+}
+
+.pergunta-img{
+    justify-content: space-between;
+}
 .ceta{
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
+
 }
 
 p{
     display: none;
+    width: 380px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
+
+

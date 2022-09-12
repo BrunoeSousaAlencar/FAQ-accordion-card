@@ -1,7 +1,7 @@
-function botao1(){
-    var texto1 =document.querySelector(".texto1");
+const perguntas = document.querySelectorAll(".pergunta-img")
 
-    if(texto1.style.display === "none"){
+perguntas.forEach((perguntas) => perguntas.addEventListener("click", () => {
+    if(texto1.style.display == "none"){
 
         texto1.style.display = "block"
 
@@ -10,6 +10,40 @@ function botao1(){
         texto1.style.display = "none"
 
     }
+}))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+function botao1(){
+    var texto1 =document.querySelector(".texto1");
+    var texto2 =document.querySelector(".texto2");
+
+    if(texto1.style.display == "none"){
+
+        texto1.style.display = "block"
+
+    } else{
+
+        texto1.style.display = "none"
+
+    }
+    texto2.style.display = "none"
 
 }
 
@@ -71,3 +105,5 @@ function botao5(){
     }
 
 }
+
+*/
