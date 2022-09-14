@@ -1,17 +1,7 @@
-const perguntas = document.querySelectorAll(".pergunta-img")
-
-perguntas.forEach((perguntas) => perguntas.addEventListener("click", () => {
-    if(texto1.style.display == "none"){
-
-        texto1.style.display = "block"
-
-    } else{
-
-        texto1.style.display = "none"
-
-    }
-}))
-
+let pessoas = ['Bruno', 'Wendy', 'Parcy']
+pessoas.forEach((valorAtual, indece, arrayCompleto)=>{
+    console.log(valorAtual, indece, arrayCompleto)
+})
 
 
 

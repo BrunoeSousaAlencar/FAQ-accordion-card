@@ -53,12 +53,18 @@ main{
 .imagem-principal{
     background-image: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top;
+    background-position: -570px;
     position: relative;
-    left: -83px;
+    left: 0px;
     cursor: auto;
     overflow: hidden;
-    width: 410px;
+    
+}
+
+.imagem-p{
+    position: relative;
+    left: -80px;
 }
 
 h2{
