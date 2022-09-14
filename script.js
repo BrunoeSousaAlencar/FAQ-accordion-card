@@ -1,99 +1,21 @@
-let pessoas = ['Bruno', 'Wendy', 'Parcy']
-pessoas.forEach((valorAtual, indece, arrayCompleto)=>{
-    console.log(valorAtual, indece, arrayCompleto)
-})
+const pergunta = document.querySelectorAll('.pergunta');
+const resposta = document.querySelectorAll('.resposta');
+const ceta = document.querySelectorAll('.ceta');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-function botao1(){
-    var texto1 =document.querySelector(".texto1");
-    var texto2 =document.querySelector(".texto2");
-
-    if(texto1.style.display == "none"){
-
-        texto1.style.display = "block"
-
-    } else{
-
-        texto1.style.display = "none"
-
-    }
-    texto2.style.display = "none"
-
+for(let i = 0; i < pergunta.length; i++){
+    pergunta[i].addEventListener('click',() =>{
+        if(pergunta[i].classList.contains('fechar')){
+            pergunta[i].classList.toggle('fechar')
+            pergunta[i].style.fontWeight = "400";
+            resposta[i].classList.toggle('ativar') 
+            resposta[i].style.marginBottom = "0px"; 
+            ceta[i].style.transform = "rotate(0deg)";
+        }else{
+            pergunta[i].classList.add('fechar')
+            pergunta[i].style.fontWeight = "700";
+            resposta[i].classList.add('ativar') 
+            resposta[i].style.marginBottom = "10px";
+            ceta[i].style.transform = "rotate(180deg)";
+        }
+    })
 }
-
-function botao2(){
-    var texto2 =document.querySelector(".texto2");
-
-    if(texto2.style.display === "none"){
-
-        texto2.style.display = "block"
-
-    } else{
-
-        texto2.style.display = "none"
-
-    }
-
-}
-
-function botao3(){
-    var texto3 =document.querySelector(".texto3");
-
-    if(texto3.style.display === "none"){
-
-        texto3.style.display = "block"
-
-    } else{
-
-        texto3.style.display = "none"
-
-    }
-
-}
-
-function botao4(){
-    var texto4 =document.querySelector(".texto4");
-
-    if(texto4.style.display === "none"){
-
-        texto4.style.display = "block"
-
-    } else{
-
-        texto4.style.display = "none"
-
-    }
-
-}
-
-function botao5(){
-    var texto5 =document.querySelector(".texto5");
-    if(texto5.style.display === "none"){
-
-        texto5.style.display = "block"
-
-    } else{
-
-        texto5.style.display = "none"
-
-    }
-
-}
-
-*/

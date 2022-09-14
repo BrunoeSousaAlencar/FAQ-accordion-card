@@ -1,0 +1,47 @@
+@media (max-width: 1200px){
+
+    main{
+        width: 80%;
+    }
+
+    .pergunta-resposta{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1020px){
+
+    main{
+        display: block;
+        height: 700px;
+        position: absolute;
+        top: 550px;
+    }
+
+    .imagem-principal{
+        background: url(../images/bg-pattern-mobile.svg);
+        background-size: contain;
+        width: 450px;
+        margin: auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+        overflow: visible;
+    }
+
+    .imagem-p{
+        position: relative;
+        bottom: 210px;
+        left: -12px;
+        margin: auto;
+        margin-bottom: -130px;
+    }
+
+    .cubo{
+        display: none;
+    }
+
+    .container2{
+        display: grid;
+        place-items: center;
+    }
+}

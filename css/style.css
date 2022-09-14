@@ -42,12 +42,27 @@ main{
     display: flex;
     border-radius: 20px;
     justify-content: space-between;
-    
-    
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+h2{
+    color: var(--Very-dark-grayish-blue);
+    font-weight: 400;
+}
+
+h2:hover{
+    color: var(--Soft-red);
 }
 
 .imagem-principal{
@@ -59,7 +74,6 @@ main{
     left: 0px;
     cursor: auto;
     overflow: hidden;
-    
 }
 
 .imagem-p{
@@ -67,33 +81,27 @@ main{
     left: -80px;
 }
 
-h2{
-    color: var(--Very-dark-grayish-blue);
-    font-weight: 400;
-}
-
-h2:focus{
-    font-weight: 700;
-}
-
-h2:hover{
-    color: var(--Soft-red);
-}
-
-.imagens{
-    background-image: url(../images/bg-pattern-desktop.svg);
-}
-
 .container2{
     display: block;
     margin: auto;
 }
 
-div{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    
+.resposta{
+    color: var(--Dark-grayish-blue);
+    max-height: 0px;
+    overflow: hidden;
+    width: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.ativar{
+    max-height: 300px;
+
+    opacity: 1;
 }
 
 .pergunta-resposta{
@@ -102,29 +110,24 @@ div{
     width: 400px;
 }
 
+.pergunta-resposta:last-of-type{
+    border-bottom: 0px;
+}
+
 .pergunta-img{
     justify-content: space-between;
 }
+
 .ceta{
     width: 12px;
     height: 10px;
 }
 
-p{
-    display: none;
-    width: 380px;
-    margin-top: 1px;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-
 .cubo{
     display: block;
     position: absolute;
     bottom: 110px;
-    left: -110px;
-    
+    left: -110px; 
 }
 
 
