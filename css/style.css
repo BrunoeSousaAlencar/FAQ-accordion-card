@@ -42,9 +42,8 @@ main{
     display: flex;
     border-radius: 20px;
     justify-content: space-between;
-    overflow: auto;
     
-
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,8 +55,10 @@ main{
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
-    right: 80px;
+    left: -83px;
     cursor: auto;
+    overflow: hidden;
+    width: 410px;
 }
 
 h2{
@@ -68,6 +69,7 @@ h2{
 h2:focus{
     font-weight: 700;
 }
+
 h2:hover{
     color: var(--Soft-red);
 }
@@ -98,9 +100,8 @@ div{
     justify-content: space-between;
 }
 .ceta{
-    width: 10px;
+    width: 12px;
     height: 10px;
-
 }
 
 p{
@@ -110,5 +111,15 @@ p{
     margin-bottom: 10px;
     font-size: 15px;
 }
+
+
+.cubo{
+    display: block;
+    position: absolute;
+    bottom: 110px;
+    left: -110px;
+    
+}
+
 
 
