@@ -14,26 +14,34 @@
     main{
         display: block;
         height: 700px;
-        position: absolute;
-        top: 550px;
+        margin-top: 200px;
+       
+    }
+
+    .container2{
+        margin-top: -70px;
     }
 
     .imagem-principal{
         background: url(../images/bg-pattern-mobile.svg);
-        background-size: contain;
-        width: 450px;
+        background-size: auto; 
         margin: auto;
         background-position: center top;
         background-repeat: no-repeat;
         overflow: visible;
     }
 
-    .imagem-p{
-        position: relative;
-        bottom: 210px;
-        left: -12px;
+    .imagem-desktop{
+        display: none;
+    }
+
+    .imagem-mobile{
+        width: 420px;
+        display: block;
+        position: relative; 
+        bottom: 100px;
         margin: auto;
-        margin-bottom: -130px;
+
     }
 
     .cubo{
@@ -43,5 +51,28 @@
     .container2{
         display: grid;
         place-items: center;
+    }
+
+}
+
+@media (max-width: 520px){
+    main{
+        height: 500px;
+        margin-top: 100px;
+        width: 90vw;
+    }
+    .imagem-mobile{
+        width: 220px;
+    }
+
+    .pergunta-resposta{
+        width: 70vw;
+        font-size: 8px;
+        margin: 0px 7px;
+    }
+
+    .resposta{
+        font-size: 8px;
+        width: 70vw;
     }
 }

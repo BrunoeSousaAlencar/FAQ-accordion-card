@@ -28,7 +28,6 @@ body{
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
-    background-color: aqua;
     background-image: linear-gradient(to bottom, var(--Soft-violet), var(--Soft-blue));
     background-attachment: fixed;
 }
@@ -76,11 +75,14 @@ h2:hover{
     overflow: hidden;
 }
 
-.imagem-p{
+.imagem-desktop{
     position: relative;
     left: -80px;
 }
 
+.imagem-mobile{
+    display: none;
+}
 .container2{
     display: block;
     margin: auto;
@@ -130,5 +132,7 @@ h2:hover{
     left: -110px; 
 }
 
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
 
 
